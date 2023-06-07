@@ -16,5 +16,5 @@ Run these commands:
 or Run by docker compose
 
 test
-ahmad saeed ch Sahiwal
+ahmad saeed ch Sahiwals
 
