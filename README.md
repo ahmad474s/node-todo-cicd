@@ -15,6 +15,4 @@ Run these commands:
 
 or Run by docker compose
 
-test
-ahmad saeed ch Sahiwalian
-Khalas
+my name is monid
