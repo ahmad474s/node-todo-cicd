@@ -15,4 +15,4 @@ Run these commands:
 
 or Run by docker compose
 
-my name is monid. My School is  unique
+my name is monid. My School is  UNIQUE
