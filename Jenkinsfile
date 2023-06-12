@@ -1,6 +1,5 @@
 pipeline {
     agent { label 'agent-dev' 
-        
     }
     stages {
         stage("Code") {
@@ -19,9 +18,7 @@ pipeline {
                  withCredentials([usernamePassword(credentialsId: 'dockerHub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                  sh "docker login -u ${env.USERNAME} -p ${env.PASSWORD}"  
                  sh "docker push ahmadsaeedch/node-todo-app-cicd:latest"
-                }
-                
-                
+                }             
             }
         }
         stage("Deploy") {
@@ -29,6 +26,5 @@ pipeline {
                 sh 'docker-compose down && docker-compose up -d'
             }
         }
-    }
-   
+    }   
 }
